@@ -1,5 +1,12 @@
-[gd_scene format=2]
+[gd_scene load_steps=2 format=2]
+
+[sub_resource type="RectangleShape2D" id=1]
 
 [node name="World" type="Node2D"]
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+
+[node name="Tile" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Tile"]
+shape = SubResource( 1 )
