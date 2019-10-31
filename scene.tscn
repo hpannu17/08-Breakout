@@ -1,12 +1,38 @@
 [gd_scene load_steps=2 format=2]
 
 [sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 23, 10 )
 
 [node name="World" type="Node2D"]
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
 
 [node name="Tile" type="StaticBody2D" parent="."]
+position = Vector2( 231, 113 )
+__meta__ = {
+"_edit_group_": true
+}
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Tile"]
+position = Vector2( 1.00002, 0 )
+shape = SubResource( 1 )
+
+[node name="Tile2" type="StaticBody2D" parent="."]
+position = Vector2( 299, 112 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Tile2"]
+position = Vector2( 1.00002, 0 )
+shape = SubResource( 1 )
+
+[node name="Tile3" type="StaticBody2D" parent="."]
+position = Vector2( 364, 114 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Tile3"]
+position = Vector2( 1.00002, 0 )
 shape = SubResource( 1 )
